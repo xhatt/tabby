@@ -24,8 +24,7 @@ div(*ngIf='vault.isEnabled()')
             input.form-control(
                 type='search',
                 [placeholder]='"Filter"|translate',
-                [(ngModel)]='searchTerm',
-                (ngModelChange)='updateFilteredSecrets()'
+                [(ngModel)]='searchTerm'
             )
 
         .text-center(*ngIf='!vaultContents.secrets.length')
